@@ -2,12 +2,13 @@
 const bodyEl = document.querySelector('body');
 const navEl = document.querySelector('nav');
 const iconEl = document.querySelector('.icon');
+const moreButtonEl = document.querySelector('.more-button');
+
 const $ulWrapper = $('.ul-wrapper');
 
 bodyEl.addEventListener('click', (e)=> {
     // const target = e.target;
     const icon = e.target.closest('.icon');
-    console.log(icon);
     // if click is inside icon
     if(icon) {
         // if icon has class 'clicked'
@@ -21,11 +22,21 @@ bodyEl.addEventListener('click', (e)=> {
         }
     // if click is outside icon
     } else if(!icon && iconEl.classList.value.includes('clicked')) {
-        console.log('not icon');
         iconEl.classList.remove('clicked');
         $ulWrapper.slideUp(300);
     }
 });
+
+moreButtonEl.addEventListener('click', (e)=> {
+    e.preventDefault();
+    $('.read-more').toggle();
+    $('.dots').toggle();
+    if(moreButtonEl.innerHTML === 'Read more') {
+        moreButtonEl.innerHTML = 'Read less';
+    } else if(moreButtonEl.innerHTML === 'Read less') {
+        moreButtonEl.innerHTML = 'Read more';
+    }
+})
 
 window.addEventListener('resize', (e) => {
     if(window.innerWidth > 768 ) {

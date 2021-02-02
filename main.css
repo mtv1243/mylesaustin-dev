@@ -107,6 +107,17 @@ hr {
     margin-bottom: 4rem;
 }
 
+/* ABOUT SECTION */
+.read-more {
+    display: none;
+}
+
+.about-text {
+    text-align: left;
+}
+
+/* PROJECT SECTIONS */
+
 .strike {
     text-decoration: line-through;
 }
@@ -115,8 +126,6 @@ hr {
     font-size: 3rem;
     text-decoration: underline;
 }
-
-/* PROJECT SECTIONS */
 
 .project-title, .about-title {
     font-size: 1.5rem;
