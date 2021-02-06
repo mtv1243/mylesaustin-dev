@@ -1,0 +1,26 @@
+/* MEDIA QUERIES */
+@media only screen and (min-width: 769px) {
+    
+    header {
+        width: 85%;
+        padding: 0 5%;
+        padding-top: 3rem;
+        margin: 0 auto;
+        background-color: #fff;
+    }
+
+    .hero-wrapper {
+        width: 50%;
+        margin: 1rem auto;
+    }
+
+    .about-title {
+        text-align: center;
+    }
+
+    .about {
+        width: 55%;
+        margin: 0 auto;
+        text-align: justify;
+    }
+}

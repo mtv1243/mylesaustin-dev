@@ -1,0 +1,39 @@
+
+body {
+    min-height: 100vh;
+}
+
+main {
+    padding-bottom: 5rem;
+}
+
+.contact-title {
+    font-size: 2rem;
+}
+
+hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contact-section {
+    text-align: center;
+}
+
+.social-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3rem auto;
+    width: 100%;
+}
+
+.social-wrapper > a > img {
+    width: 5rem;
+    transform: scale(1,1);
+    transition: transform .05s
+}
+
+.social-wrapper > a > img:hover {
+    transform: scale(1.1,1.1)
+}

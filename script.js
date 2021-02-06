@@ -27,25 +27,40 @@ bodyEl.addEventListener('click', (e)=> {
     }
 });
 
-moreButtonEl.addEventListener('click', (e)=> {
-    e.preventDefault();
-    $('.read-more').toggle();
-    $('.dots').toggle();
-    if(moreButtonEl.innerHTML === 'Read more') {
-        moreButtonEl.innerHTML = 'Read less';
-    } else if(moreButtonEl.innerHTML === 'Read less') {
-        moreButtonEl.innerHTML = 'Read more';
+// preserve menu if user resizes window
+window.addEventListener('resize', (e) => {
+    if(window.innerWidth > 768 ) {
+        // console.log('desktop');
+        $ulWrapper.slideDown(10);
+        iconEl.classList.remove('clicked');
+    } else if (window.innerWidth <= 768) {
+        // console.log('mobile');
+        $ulWrapper.slideUp(10);
+        iconEl.classList.remove('clicked');
     }
 })
 
-window.addEventListener('resize', (e) => {
-    if(window.innerWidth > 768 ) {
-        $ulWrapper.slideDown(10);
-        // iconEl.classList.remove('clicked');
-    } else if (window.innerWidth <= 768) {
-        $ulWrapper.slideUp(10);
+// Intersection Observer
+let ioOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: .25
+}
+
+const io = new IntersectionObserver((entries) => {
+    for (const entry of entries) {
+
+        if(entry.isIntersecting) {
+        entry.target.classList.remove('hidden');
+        }
+
+        // console.log(`${entry.target.classList.value} is in view: ${entry.isIntersecting}`);
     }
-})
+}, ioOptions);
+
+document.querySelectorAll('.project')
+    .forEach(element => {io.observe(element)});
+
 
 console.log(`
 #                (           )    *                
@@ -58,3 +73,4 @@ console.log(`
 #    \\_/\\_/ |___|____|\\___\\___/|_|  |_|___| (_/_/  
 #                                                  
 `)
+

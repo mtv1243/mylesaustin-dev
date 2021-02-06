@@ -1,0 +1,21 @@
+/* MEDIA QUERIES */
+@media only screen and (min-width: 769px) {
+    
+    .project-video img {
+        height: 100%;
+    }
+
+    .type-project img {
+        border: 1px solid #000;
+    } 
+
+    .title-link {
+        color: #333333;
+        text-decoration: none;
+    }
+
+    .hero {
+        width: 70%;
+        margin: 0 auto;
+    }
+}

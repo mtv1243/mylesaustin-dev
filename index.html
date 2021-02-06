@@ -16,85 +16,109 @@
         </div>
         <div class="ul-wrapper">
             <ul class="nav-ul">
-                <li><a href="#" class="nav-item">Portfolio</a></li>
-                <li><a href="mailto:myles@mylesaustin.dev" class="nav-item">Contact Myles</a></li>
-                <li><a href="https://www.linkedin.com/in/myles-tyrer-vasell-5835a837/" target="_blank" rel="noopener noreferrer" class="nav-item">LinkedIn</a></li>
-                <li><a href="https://github.com/mtv1243" target="_blank" rel="noreferrer noopener" class="nav-item">Github</a></li>
-                <li><a href="https://mtyrervasell.medium.com/" target="_blank" rel="noopener noreferrer" class="nav-item">Medium</a></li>
+                <li><a href="#" class="nav-item nav-active">Portfolio</a></li>
+                <li><a href="./pages/contact.html" class="nav-item">Contact Myles</a></li>
+                <li><a href="./pages/about.html" class="nav-item">About Myles</a></li>
+                <li><a href="./pages/medium.html" class="nav-item">Medium Articles</a></li>
             </ul>
         </div>
         
     </nav>
     <!-- END NAV -->
-    <header>
-        <section class="hero">
-            <h1 class="title">Myles Austin: Fullstack Developer</h1>
-            <div class="hero-wrapper">
-                <img src="./Google_Plus_Prof_Pic_smaller.jpg" alt="" class="hero-image">
-            </div>
-            <aside class="hero-subtext">Available for full-time, part-time and contract technical projects.
-            </aside>
-        </section>
-        <!-- END HERO -->
-        <hr>
-        <!-- END HR -->
-        <section class="about">
-            <h3 class="about-title">About Me</h3>
-            <p class="about-text">Myles Austin Tyrer-Vasell is an Ann Arbor based full-stack web developer working in javaScript, Node, React, HTML5, CSS, and any other tools he can get his hands on<span class="dots">...</span><span class="read-more"> that help him create. Before coming to tech, Myles got a degree in film production from Brandeis University in Waltham MA, then moved to NYC and became a bicycle rental agent, cinematographer, steakhouse waiter, documentary filmmaker, and Google Ads guru. After taking an introductory HTML and CSS class at DCTV in Manhattan, Myles began peeking behind the curtain of all his favorite websites so he could start making his own. He might not have met you yet, but would love to teach you how to play cribbage. <br>He won't go easy on you.</span></p><a href="#" class="more-button">Read more</a>
-        </section>
-        <!-- END ABOUT -->
-        <hr>
-        <!-- END HR -->
-    </header>
-    <!-- END HEADER -->
     <main>
+        <header>
+            <section class="hero">
+                <h1 class="title">Myles Austin: Fullstack Developer</h1>
+                <div class="hero-wrapper">
+                    <img src="./media/Google_Plus_Prof_Pic_smaller-wide.jpg" alt="Picture of Myles Austin" class="hero-image">
+                </div>
+                <aside class="hero-subtext">Available for full-time, part-time and contract technical projects.
+                </aside>
+            </section>
+            <!-- END HERO -->
+        </header>
+    <!-- END HEADER -->
+    <div class="hr"></div>
+    <!-- <hr> -->
+    <!-- END HR -->
+    
+        
         <h2 class="projects-title">PROJECTS</h2>
-        <section class="cribbage-project">
-            <h3 class="project-title">Online Cribbage: an app for playing cribbage with friends and strangers.</h3>
-            <a href="https://lit-island-43797.herokuapp.com/" class="project-link" target="_blank" rel="noopener noreferrer">click here to see a functional demo</a>
-            <p class="projec-langs">Node, Express, EJS, Firebase Realtime Database, javaScript, jQuery, CSS3, HTML</p>
+        <section class="cribbage-project project hidden">
+            <h3 class="project-title mobile-title">Online Cribbage: an app for playing cribbage with friends and strangers.</h3>
             <div class="project-video">
                 <iframe src="https://www.youtube.com/embed/0R-RQk4vjpU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-        </section>
-        <!-- END PROJECT -->
-        <hr>
-        <!-- END HR -->
-        <section class="type-project project">
-            <h3 class="project-title">Type <span class="strike">Bad Words</span>: a typing game for troublemakers.</h3>
-            <a href="http://type-bad-words.herokuapp.com/" class="project-link" target="_blank" rel="noopener noreferrer">click here to see a functional demo</a>
-            <p class="projec-langs">Node, Express, Twitter developer API, javaScript, Firebase Realtime Database, jQuery, CSS3, HTML</p>
-            <div class="project-video">
-                <iframe src="https://www.youtube.com/embed/JGLtcqYziO8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <span class="spacer"></span>
+
+            <div class="project-text">
+                <h3 class="project-title desktop-title">Online Cribbage: an app for playing cribbage with friends and strangers.</h3>
+                <a href="https://lit-island-43797.herokuapp.com/" class="project-link" target="_blank" rel="noopener noreferrer">click here to see a functional demo</a>
+                <p class="projec-langs">Languages:<br>Node.js, Express, EJS, Firebase Realtime Database, JavaScript, jQuery, CSS3, HTML</p>
             </div>
+            
         </section>
         <!-- END PROJECT -->
         <hr>
         <!-- END HR -->
-        <section class="gcc-project project">
-            <h3 class="project-title">GCCTransportationLLC.org: a site built for accessibility first.</h3>
-            <a href="https://www.gcctransportationllc.org/" class="project-link" target="_blank" rel="noopener noreferrer">click here to see the live site</a>
-            <p class="projec-langs">javaScript, jQuery, UserWay Accessibility API, CSS3, HTML</p>
+        <section class="type-project project hidden">
+
+            <h3 class="project-title mobile-title">Type <span class="strike">Bad Words</span>: a typing game for troublemakers.</h3>
+
             <div class="project-video">
-                <iframe src="https://www.youtube.com/embed/WOgPKBTIYng" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/JGLtcqYziO8" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
+
+            <span class="spacer"></span>
+            
+            <div class="project-text">
+                <h3 class="project-title desktop-title">Type <span class="strike">Bad Words</span>: a typing game for troublemakers.</h3>
+                <a href="http://type-bad-words.herokuapp.com/" class="project-link" target="_blank" rel="noopener noreferrer">click here to see a functional demo</a>
+                <p class="projec-langs">Node.js, Express, Twitter developer API, JavaScript, Firebase Realtime Database, jQuery, CSS3, HTML</p>
+            </div>
+
         </section>
         <!-- END PROJECT -->
         <hr>
         <!-- END HR -->
-        <section class="sedition-project project">
-            <h3 class="project-title">The Sedition Caucus Funders: see who's taking your money to fund sedition.</h3>
-            <a href="https://mtv1243.github.io/sedition_caucus_visualization/" class="project-link" target="_blank" rel="noopener noreferrer">see a functional demo</a>
-            <p class="projec-langs">React, Airtable, Node, javaScript, CSS3, HTML</p>
+        <section class="gcc-project project hidden">
+            <h3 class="project-title mobile-title">GCCTransportationLLC.org: a site built for accessibility first.</h3>
             <div class="project-video">
+                <iframe src="https://www.youtube.com/embed/WOgPKBTIYng" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <span class="spacer"></span>
+            
+            <div class="project-text">
+                <h3 class="project-title desktop-title">GCCTransportationLLC.org: a site built for accessibility first.</h3>
+                <a href="https://www.gcctransportationllc.org/" class="project-link" target="_blank" rel="noopener noreferrer">click here to see the live site</a>
+                <p class="projec-langs">JavaScript, jQuery, UserWay Accessibility API, CSS3, HTML</p>
+            </div>
+
+        </section>
+        <!-- END PROJECT -->
+        <hr>
+        <!-- END HR -->
+        <section class="sedition-project project hidden ">
+
+            <div class="project-video">
+                <h3 class="project-title mobile-title">The Sedition Caucus Funders: see who's taking your money to fund sedition.</h3>
                 <a href="https://mtv1243.github.io/sedition_caucus_visualization/" class="project-image-link" target="_blank" rel="noopener noreferrer">
-                    <img src="./Sedition caucus screenshot.png" alt="">
+                    <img src="./media/Sedition caucus screenshot.png" alt="Sedition Caucus Funders Project Screenshot">
                 </a>
             </div>
+
+            <span class="spacer"></span>
+
+            <div class="project-text">
+                <h3 class="project-title desktop-title">The Sedition Caucus Funders: see who's taking your money to fund sedition.</h3>
+                <a href="https://mtv1243.github.io/sedition_caucus_visualization/" class="project-link" target="_blank" rel="noopener noreferrer">click here see a functional demo</a>
+                <p class="projec-langs">React.js, Airtable, Node.js, JavaScript, CSS3, HTML</p>
+            </div>
+
         </section>
         <!-- END PROJECT -->
-        <hr>
-        <!-- END HR -->
     </main>
     <footer>
         <p class="copyright">Made by Myles Austin in 2021</p>
