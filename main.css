@@ -400,9 +400,17 @@ footer {
 @media only screen and (min-width: 425px) {
     .project-video {
         height: 21rem;
-        width: 45%;
+        
     }
 }
+
+
+@media only screen and (max-width: 768px) {
+    .project-video {
+        height: 30rem
+    }
+}
+
 
 @media only screen and (max-width: 374px) {
     .project-title {
