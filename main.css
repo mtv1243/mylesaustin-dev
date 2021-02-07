@@ -72,7 +72,7 @@ nav {
 .ul-wrapper {
     display: none;
     position: absolute;
-    top: 20px;
+    top: 11px;
     width: 100%;
     left: 0;
 }
@@ -87,7 +87,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 12px;
+    font-size: 21px;
     padding: 0;
 }
 
@@ -291,6 +291,7 @@ footer {
         display: flex;
         flex-direction: row;
         margin: 0;
+        font-size: 12px;
     }
 
     ul.nav-ul > li {
