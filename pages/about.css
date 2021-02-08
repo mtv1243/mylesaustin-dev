@@ -1,3 +1,13 @@
+.about {
+    width: 90%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.about-title {
+    text-align: center;
+}
+
 /* MEDIA QUERIES */
 @media only screen and (min-width: 769px) {
     
@@ -15,13 +25,7 @@
         margin: 1rem auto;
     }
 
-    .about-title {
-        text-align: center;
-    }
-
     .about {
         width: 55%;
-        margin: 0 auto;
-        text-align: justify;
     }
 }

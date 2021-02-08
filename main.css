@@ -268,6 +268,22 @@ footer {
 /* ===========================
         MEDIA QUERIES 
 ==============================*/
+@media only screen and (min-width: 425px) {
+    .abstract {
+        width: 90%;
+        margin: 5rem auto;
+        text-align: justify;
+    }
+
+    .abstract-title {
+        text-align: center;
+    }
+
+    .project-video {
+        height: 25rem;
+    }
+}
+
 @media only screen and (min-width: 769px) {
 
     body {
