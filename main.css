@@ -197,6 +197,10 @@ hr {
         PROJECT SECTIONS 
 ================================*/
 
+.abstract {
+    margin-top: 3rem;
+}
+
 .project {
     opacity: 1;
     transform: translate(0px, 0px);
@@ -213,7 +217,7 @@ hr {
 }
 
 .projects-title {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 400;
     margin-bottom: 5rem;
     text-decoration: underline;
@@ -227,13 +231,14 @@ hr {
     display: none;
 }
 
-.project-title, .about-title {
+.project-title, .about-title, .abstract-title {
     font-size: 1.5rem;
     font-weight: 400;
 }
 
 .project-link {
     font-weight: 700;
+    line-height: 2rem;
 }
 
 .project-video {
@@ -353,6 +358,7 @@ footer {
         width: 85%;
         padding: 0 5%;
         padding-top: 5rem;
+        padding-bottom: 5rem;
         margin: 0 auto;
     }
 
@@ -393,12 +399,14 @@ footer {
         align-items: center;
     }
 
-    .sedition-project {
-        padding-bottom: 3rem;
+    .abstract {
+        width: 70%;
+        margin: 5rem auto;
+        text-align: justify;
     }
 
-    .project-image-link > img {
-        height: 100%;
+    .abstract-title {
+        text-align: center;
     }
 }
 

@@ -43,84 +43,85 @@
     <!-- END HR -->
     
         
-        <h2 class="projects-title">PROJECTS</h2>
+        <h2 class="projects-title">PORTFOLIO</h2>
         <section class="cribbage-project project hidden">
+            
+            <!-- MOBILE TITLE -->
             <h3 class="project-title mobile-title">Online Cribbage: an app for playing cribbage with friends and strangers.</h3>
+            
+            <!-- VIDEO IFRAME -->
             <div class="project-video">
                 <iframe src="https://www.youtube.com/embed/0R-RQk4vjpU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
 
+            <!-- SPACER -->
             <span class="spacer"></span>
 
             <div class="project-text">
-                <h3 class="project-title desktop-title">Online Cribbage: an app for playing cribbage with friends and strangers.</h3>
-                <a href="https://lit-island-43797.herokuapp.com/" class="project-link" target="_blank" rel="noopener noreferrer">click here to see a functional demo</a>
-                <p class="projec-langs">Languages:<br>Node.js, Express, EJS, Firebase Realtime Database, JavaScript, jQuery, CSS3, HTML</p>
-            </div>
-            
-        </section>
-        <!-- END PROJECT -->
-        <hr>
-        <!-- END HR -->
-        <section class="type-project project hidden">
-
-            <h3 class="project-title mobile-title">Type <span class="strike">Bad Words</span>: a typing game for troublemakers.</h3>
-
-            <div class="project-video">
-                <iframe src="https://www.youtube.com/embed/JGLtcqYziO8" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-
-            <span class="spacer"></span>
-            
-            <div class="project-text">
-                <h3 class="project-title desktop-title">Type <span class="strike">Bad Words</span>: a typing game for troublemakers.</h3>
-                <a href="http://type-bad-words.herokuapp.com/" class="project-link" target="_blank" rel="noopener noreferrer">click here to see a functional demo</a>
-                <p class="projec-langs">Node.js, Express, Twitter developer API, JavaScript, Firebase Realtime Database, jQuery, CSS3, HTML</p>
-            </div>
-
-        </section>
-        <!-- END PROJECT -->
-        <hr>
-        <!-- END HR -->
-        <section class="gcc-project project hidden">
-            <h3 class="project-title mobile-title">GCCTransportationLLC.org: a site built for accessibility first.</h3>
-            <div class="project-video">
-                <iframe src="https://www.youtube.com/embed/WOgPKBTIYng" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-
-            <span class="spacer"></span>
-            
-            <div class="project-text">
-                <h3 class="project-title desktop-title">GCCTransportationLLC.org: a site built for accessibility first.</h3>
-                <a href="https://www.gcctransportationllc.org/" class="project-link" target="_blank" rel="noopener noreferrer">click here to see the live site</a>
-                <p class="projec-langs">JavaScript, jQuery, UserWay Accessibility API, CSS3, HTML</p>
-            </div>
-
-        </section>
-        <!-- END PROJECT -->
-        <hr>
-        <!-- END HR -->
-        <section class="sedition-project project hidden ">
-
-            <h3 class="project-title mobile-title">The Sedition Caucus Funders: see who's taking your money to fund sedition.</h3>
-
-            <div class="project-video">
                 
-                <a href="https://mtv1243.github.io/sedition_caucus_visualization/" class="project-image-link" target="_blank" rel="noopener noreferrer">
-                    <img src="./media/Sedition caucus screenshot.png" alt="Sedition Caucus Funders Project Screenshot">
-                </a>
+                <!-- DESKTOP TITLE -->
+                <h3 class="project-title desktop-title">Online Cribbage: an app for playing cribbage with friends and strangers.</h3>
+                
+                <!-- LINKS -->
+                <a href="https://lit-island-43797.herokuapp.com/" class="project-link" target="_blank" rel="noopener noreferrer">see a functional demo</a>
+                
+                <br>
+
+                <a href="https://github.com/mtv1243/deck_of_cards" class="project-link" target="_blank" rel="noopener noreferrer">see the github repo</a>
+                
+                <!-- STACK -->
+                <p class="projec-langs">Stack:<br>Node.js, Express, EJS, Firebase Realtime Database, JavaScript, jQuery, CSS3, HTML</p>
             </div>
-
-            <span class="spacer"></span>
-
-            <div class="project-text">
-                <h3 class="project-title desktop-title">The Sedition Caucus Funders: see who's taking your money to fund sedition.</h3>
-                <a href="https://mtv1243.github.io/sedition_caucus_visualization/" class="project-link" target="_blank" rel="noopener noreferrer">click here see a functional demo</a>
-                <p class="projec-langs">React.js, Airtable, Node.js, JavaScript, CSS3, HTML</p>
-            </div>
-
+            
         </section>
-        <!-- END PROJECT -->
+
+        <section class="abstract">
+
+            <h3 class="abstract-title">Abstract</h3>
+
+            <p class="abstract-1">
+                Online Cribbage is a project that lets you create a shareable link to a unique, self contained game of cribbage you can play with a friend. You can read in detail about how it was created in this <a href="https://mtyrervasell.medium.com/"  target="_blank" rel="noopener noreferrer" class="abstract-link">series of medium articles.</a>
+            </p>
+            
+            <!-- <br> -->
+            
+            <p class=" abstract-2">
+                Briefly, the Node Express server creates a unique, sharable url to a private game. This approach uses Node's built-in fs module to <a href=" https://github.com/mtv1243/deck_of_cards/blob/9a19641b555463201fe81a7c38a929726a3b80c4/server/App.js#L64-L84" target="_blank" rel="noopener noreferrer" class="abstract-link">read the contents of a template file</a> and add in a unique gamekey that is used to route HTTP requests to that game, as well as create a new dedicated realtime database node. Doing it this way lets Node do all the work, rather than outsourcing dynamic URL creation to a third party package or library. <a href="https://mtyrervasell.medium.com/one-approach-to-a-virtual-card-game-with-firebase-realtime-database-part-iii-server-139ba16db5b4"  target="_blank" rel="noopener noreferrer" class="abstract-link">Read in detail about the server's code here.</a>
+            </p>
+
+            <!-- <br> -->
+            
+            <p class=" abstract-3">
+                The client-side JavaScript handles all of the logic for the actual card game data, such as each player's cards, their scores, etc. <a href="https://mtyrervasell.medium.com/making-a-card-game-with-firebase-realtime-database-c214fdc62fcb"  target="_blank" rel="noopener noreferrer" class="abstract-link">Read about the front-end code here.</a> The data is all stored in a Firebase Realtime Database node unique to that game. The guiding principle in this implementation is that the database should control the DOM. This will ensure that if you see a “card” element in the DOM, <a href="https://github.com/mtv1243/deck_of_cards/blob/9a19641b555463201fe81a7c38a929726a3b80c4/server/public/cardDeck.js#L304-L331"  target="_blank" rel="noopener noreferrer" class="abstract-link">that card represents data from the database available to both players</a>, and is not just a local DOM element on your machine that your opponent will not see.
+            </p>
+
+            <!-- <br> -->
+            
+            <p class=" abstract-3">
+                If the app were to get larger, and have more users with more permanent data, such as usernames or a history of wins and losses on the platform, there would likely be a need to have a more robust data storage solution. Because of the shallow structure of the data, and because each game is totally unique, a NoSQL database such as MongoDB would probably be a good candidate.
+            </p>
+            
+            <!-- <br> -->
+
+            <p class=" abstract-3">
+                Thanks for taking the time to read about my project! Please don't hesitate to <a href="./pages/contact.html" class="abstract-link">contact me</a> if you have any suggestions, questions or you want to play a game of online cribbage. 
+            </p>
+            <!-- <p class="abstract abstract-1">
+                Online Cribbage is a project that lets you create a shareable link to a unique, self contained game of cribbage you can play with a friend. The most important feature is the routing of requests from the homepage, and the creation of private, shareable links. The details are explained in a <a href="https://mtyrervasell.medium.com/one-approach-to-a-virtual-card-game-with-firebase-realtime-database-part-iii-server-139ba16db5b4" target="_blank" rel="noopener noreferrer" class="abstract-link">series of medium posts available here.</a>
+            </p>
+            <p class="abstract anstract-2">
+                 Briefly, when the Node Express server receives a request to create a new game, it <a href="https://github.com/mtv1243/deck_of_cards/blob/9a19641b555463201fe81a7c38a929726a3b80c4/server/App.js#L64-L84" target="_blank" rel="noopener noreferrer" class="abstract-link">randomly generates a unique 5 character key</a> for that game then adds that key to a new EJS file created from a template. Then any request to a url including that key <a href="https://github.com/mtv1243/deck_of_cards/blob/9a19641b555463201fe81a7c38a929726a3b80c4/server/App.js#L90-L114" target="_blank" rel="noopener noreferrer" class="abstract-link">is routed to serve up that unique EJS file.</a> After 24 hours, the file is <a href="https://github.com/mtv1243/deck_of_cards/blob/9a19641b555463201fe81a7c38a929726a3b80c4/server/App.js#L18-L46" target="_blank" rel="noopener noreferrer" class="abstract-link">deleted automatically</a> to conserve disk space.
+            </p>
+            <p class="abstract anstract-3">
+                This approach exclusively uses Node's built-in file system module, and prevents having to outsource dynamic url creation to another library or language. It also makes the length of url validity flexible, so if, for example, in the future links needed to be valid for only 1 hour, that change would only require editing one line of code.
+            </p>
+            <p class="abstract anstract-4">
+                The client-side javascript also <a href="https://github.com/mtv1243/deck_of_cards/blob/9a19641b555463201fe81a7c38a929726a3b80c4/server/public/cardDeck.js#L17-L23" target="_blank" rel="noopener noreferrer" class="abstract-link">reads the unique key from a data attribute in the rendered HTML</a>, and uses the key to create a unique Firebase Realtime Database node that will hold all of the game data like the deck of cards, players' points, etc.
+            </p>
+            <p class="abstract anstract-5">
+                The guiding principle in 
+            </p> -->
+        </section>
     </main>
     <hr>
     <footer>
